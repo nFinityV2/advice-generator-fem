@@ -14,18 +14,61 @@
 }
 
 body {
+    min-height: 75vh;
     display: grid;
     place-content: center;
     box-sizing: border-box;
+    background-color: var(--dark-blue);
     font-size: 1rem;
 }
 
+footer {
+    margin-top: 5em;
+    color:var(--light-cyan);
+}
+
+.quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--dark-greyish-blue);
+    border: none;
+    border-radius: 15px;
+    padding: 1.5em 1.75em;
+}
+
 .quote {
+    color: var(--light-cyan);
     font-size: 1.75rem;
+    text-align: center;
+}
+
+.divider {
+    color: var(--light-cyan);
+}
+
+.advice-id {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--neon-green);
+}
+
+.btn-quote {
+    background-color: var(--neon-green);
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 55px;
 }
 
 .attribution { 
-    font-size: 11px; text-align: center; 
+    padding-top: 1em;
+    font-size: 11px;
+    text-align: center; 
 }
 
 .attribution a { 
