@@ -14,7 +14,7 @@
 }
 
 body {
-    min-height: 75vh;
+    min-height: 100vh;
     display: grid;
     place-content: center;
     box-sizing: border-box;
@@ -35,6 +35,7 @@ footer {
     border: none;
     border-radius: 15px;
     padding: 1.5em 1.75em;
+    max-width: 300px;
 }
 
 .quote {
@@ -45,6 +46,7 @@ footer {
 
 .divider {
     color: var(--light-cyan);
+    margin-top: 1em;
 }
 
 .advice-id {
@@ -65,6 +67,11 @@ footer {
     top: 55px;
 }
 
+.btn-quote:hover {
+    box-shadow: 0 0 15px var(--neon-green);
+    cursor: pointer;
+}
+
 .attribution { 
     padding-top: 1em;
     font-size: 11px;
@@ -73,4 +80,10 @@ footer {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 1024px) {
+    .quote-container {
+        max-width: 500px;
+    }
 }
